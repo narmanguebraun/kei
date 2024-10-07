@@ -1,3 +1,29 @@
 {
-  "plugins": ["prettier-plugin-tailwindcss"]
+  "arrowParens": "always",
+  "jsxSingleQuote": true,
+  "printWidth": 100,
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "importOrder": [
+    "^(react/(.*)$)|^(react$)",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@/types/(.*)$",
+    "",
+    "@/constants$",
+    "^@/utils/(.*)$",
+    "^@/lib/(.*)$",
+    "^@/services/(.*)$",
+    "@/store$",
+    "^@/hooks/(.*)$",
+    "^@/components/ui/(.*)$",
+    "^@/components/(.*)$",
+    "^@/app/(.*)$",
+    "^@/styles/(.*)$",
+    "",
+    "^[./]"
+  ],
+  "plugins": ["prettier-plugin-tailwindcss", "@ianvs/prettier-plugin-sort-imports"]
 }
